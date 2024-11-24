@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.menu-item {
+	border: 2.5px solid #333;
+	background-color: #f0f0f0;
+	font-family: 'Courier New', monospace;
+	position: relative;
+	margin: 10px;
+	height: 200px;
+}
+
+p {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/* Specific styles for individual items */
+#chicken, #beef, #sushi {
+	float: right;
+	border: 1px solid #000;
+	text-align: center;
+	width: 35%;
+	position: relative;
+	font-family: 'Arial Black', sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#chicken {
+	background-color: #ffb6c1;
+}
+
+#beef {
+	background-color: #ff6347;
+}
+
+#sushi {
+	background-color: #f0e68c;
+}
+
+/* Container row */
+.menu-container {
+	width: 100%;
+}
+
+/* Large screen view */
+@media (min-width: 992px) {
+	.menu-item {
+		width: 31%;
+		float: left;
+	}
+
+	.menu-item:nth-child(3) {
+		width: 32%;
+	}
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+	.menu-item {
+		width: 46.5%;
+		float: left;
+	}
+
+	.menu-item:nth-child(3) {
+		width: 95%;
+	}
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+	.menu-item {
+		width: 95%;
+		float: left;
+	}
+}
